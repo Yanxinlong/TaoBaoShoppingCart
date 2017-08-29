@@ -1,0 +1,252 @@
+{
+  "data" : {
+    "attributeList" : [
+      {
+        "attributeId" : 1,
+        "attributeName" : "颜色",
+        "attributeValues" : "七彩,斑马,绿色"
+      },
+      {
+        "attributeId" : 2,
+        "attributeName" : "性别",
+        "attributeValues" : "男,女"
+      },
+      {
+        "attributeId" : 3,
+        "attributeName" : "尺码",
+        "attributeValues" : "36,38,40,42,44"
+      }
+    ],
+    "companyId" : 2305,
+    "companyProduct" : "",
+    "detailUrl" : "/mallProductDetail?productId=1",
+    "endTime" : "2018-05-31",
+    "imgList" : "project/201704271852244399957614.jpg",
+    "isAddress" : 1,
+    "isMark" : 0,
+    "price" : "99",
+    "productFreight" : 0,
+    "productFreightAdd" : 0,
+    "productId" : 1,
+    "productName" : "鳄鱼皮高端大气上档次的草鞋裤子裤子裤子裤子裤子裤子裤子裤子裤子裤子",
+    "productNum" : 55,
+    "productStatus" : 1,
+    "purchaseNum" : 13,
+    "remark" : "不要钱，真的不要钱，你信吗",
+    "startTime" : "2017-04-27",
+    "valueGroupList" : [
+      {
+        "attrs" : "颜色,性别,尺码",
+        "price" : 0.01,
+        "sellNumber" : 1,
+        "totalNumber" : 100,
+        "valueGroup" : "七彩,男,36"
+      },
+      {
+        "attrs" : "颜色,性别,尺码",
+        "price" : 0.01,
+        "sellNumber" : 1,
+        "totalNumber" : 100,
+        "valueGroup" : "七彩,男,38"
+      },
+      {
+        "attrs" : "颜色,性别,尺码",
+        "price" : 0.01,
+        "sellNumber" : 0,
+        "totalNumber" : 0,
+        "valueGroup" : "七彩,男,40"
+      },
+      {
+        "attrs" : "颜色,性别,尺码",
+        "price" : 0.01,
+        "sellNumber" : 0,
+        "totalNumber" : 0,
+        "valueGroup" : "七彩,男,42"
+      },
+      {
+        "attrs" : "颜色,性别,尺码",
+        "price" : 0.01,
+        "sellNumber" : 0,
+        "totalNumber" : 0,
+        "valueGroup" : "七彩,男,44"
+      },
+      {
+        "attrs" : "颜色,性别,尺码",
+        "price" : 0.01,
+        "sellNumber" : 0,
+        "totalNumber" : 0,
+        "valueGroup" : "七彩,女,36"
+      },
+      {
+        "attrs" : "颜色,性别,尺码",
+        "price" : 0.01,
+        "sellNumber" : 0,
+        "totalNumber" : 0,
+        "valueGroup" : "七彩,女,38"
+      },
+      {
+        "attrs" : "颜色,性别,尺码",
+        "price" : 0.01,
+        "sellNumber" : 1,
+        "totalNumber" : 100,
+        "valueGroup" : "七彩,女,40"
+      },
+      {
+        "attrs" : "颜色,性别,尺码",
+        "price" : 0.01,
+        "sellNumber" : 0,
+        "totalNumber" : 100,
+        "valueGroup" : "七彩,女,42"
+      },
+      {
+        "attrs" : "颜色,性别,尺码",
+        "price" : 0.01,
+        "sellNumber" : 1,
+        "totalNumber" : 100,
+        "valueGroup" : "七彩,女,44"
+      },
+      {
+        "attrs" : "颜色,性别,尺码",
+        "price" : 0.01,
+        "sellNumber" : 0,
+        "totalNumber" : 100,
+        "valueGroup" : "斑马,男,36"
+      },
+      {
+        "attrs" : "颜色,性别,尺码",
+        "price" : 0.01,
+        "sellNumber" : 0,
+        "totalNumber" : 100,
+        "valueGroup" : "斑马,男,38"
+      },
+      {
+        "attrs" : "颜色,性别,尺码",
+        "price" : 0.01,
+        "sellNumber" : 0,
+        "totalNumber" : 0,
+        "valueGroup" : "斑马,男,40"
+      },
+      {
+        "attrs" : "颜色,性别,尺码",
+        "price" : 0.01,
+        "sellNumber" : 0,
+        "totalNumber" : 0,
+        "valueGroup" : "斑马,男,42"
+      },
+      {
+        "attrs" : "颜色,性别,尺码",
+        "price" : 0.01,
+        "sellNumber" : 0,
+        "totalNumber" : 0,
+        "valueGroup" : "斑马,男,44"
+      },
+      {
+        "attrs" : "颜色,性别,尺码",
+        "price" : 0.01,
+        "sellNumber" : 0,
+        "totalNumber" : 0,
+        "valueGroup" : "斑马,女,36"
+      },
+      {
+        "attrs" : "颜色,性别,尺码",
+        "price" : 0.01,
+        "sellNumber" : 0,
+        "totalNumber" : 0,
+        "valueGroup" : "斑马,女,38"
+      },
+      {
+        "attrs" : "颜色,性别,尺码",
+        "price" : 0.01,
+        "sellNumber" : 3,
+        "totalNumber" : 100,
+        "valueGroup" : "斑马,女,40"
+      },
+      {
+        "attrs" : "颜色,性别,尺码",
+        "price" : 0.01,
+        "sellNumber" : 0,
+        "totalNumber" : 100,
+        "valueGroup" : "斑马,女,42"
+      },
+      {
+        "attrs" : "颜色,性别,尺码",
+        "price" : 0.01,
+        "sellNumber" : 1,
+        "totalNumber" : 55,
+        "valueGroup" : "斑马,女,44"
+      },
+      {
+        "attrs" : "颜色,性别,尺码",
+        "price" : 0.01,
+        "sellNumber" : 0,
+        "totalNumber" : 100,
+        "valueGroup" : "绿色,男,36"
+      },
+      {
+        "attrs" : "颜色,性别,尺码",
+        "price" : 0.01,
+        "sellNumber" : 0,
+        "totalNumber" : 100,
+        "valueGroup" : "绿色,男,38"
+      },
+      {
+        "attrs" : "颜色,性别,尺码",
+        "price" : 0.01,
+        "sellNumber" : 0,
+        "totalNumber" : 100,
+        "valueGroup" : "绿色,男,40"
+      },
+      {
+        "attrs" : "颜色,性别,尺码",
+        "price" : 0.01,
+        "sellNumber" : 0,
+        "totalNumber" : 0,
+        "valueGroup" : "绿色,男,42"
+      },
+      {
+        "attrs" : "颜色,性别,尺码",
+        "price" : 0.01,
+        "sellNumber" : 0,
+        "totalNumber" : 0,
+        "valueGroup" : "绿色,男,44"
+      },
+      {
+        "attrs" : "颜色,性别,尺码",
+        "price" : 0.01,
+        "sellNumber" : 0,
+        "totalNumber" : 0,
+        "valueGroup" : "绿色,女,36"
+      },
+      {
+        "attrs" : "颜色,性别,尺码",
+        "price" : 0.01,
+        "sellNumber" : 0,
+        "totalNumber" : 0,
+        "valueGroup" : "绿色,女,38"
+      },
+      {
+        "attrs" : "颜色,性别,尺码",
+        "price" : 0.01,
+        "sellNumber" : 1,
+        "totalNumber" : 100,
+        "valueGroup" : "绿色,女,40"
+      },
+      {
+        "attrs" : "颜色,性别,尺码",
+        "price" : 0.01,
+        "sellNumber" : 1,
+        "totalNumber" : 100,
+        "valueGroup" : "绿色,女,42"
+      },
+      {
+        "attrs" : "颜色,性别,尺码",
+        "price" : 0.01,
+        "sellNumber" : 3,
+        "totalNumber" : 100,
+        "valueGroup" : "绿色,女,44"
+      }
+    ]
+  },
+  "msg" : "加载成功",
+  "result" : 0
+}

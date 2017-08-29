@@ -15,6 +15,19 @@
 		F0338D311F5503C000B28AFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0338D2F1F5503C000B28AFE /* LaunchScreen.storyboard */; };
 		F0338D3C1F5503C000B28AFE /* TaoBaoShoppingCartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0338D3B1F5503C000B28AFE /* TaoBaoShoppingCartTests.m */; };
 		F0338D471F5503C100B28AFE /* TaoBaoShoppingCartUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0338D461F5503C100B28AFE /* TaoBaoShoppingCartUITests.m */; };
+		F0338D591F55085900B28AFE /* ChooseCategoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = F0338D581F55085900B28AFE /* ChooseCategoryView.m */; };
+		F0338D5C1F5508C700B28AFE /* StoreProjectDetailModule.m in Sources */ = {isa = PBXBuildFile; fileRef = F0338D5B1F5508C700B28AFE /* StoreProjectDetailModule.m */; };
+		F0338D5F1F5509C000B28AFE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0338D5E1F5509C000B28AFE /* UIKit.framework */; };
+		F0338D611F5509ED00B28AFE /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0338D601F5509ED00B28AFE /* CoreFoundation.framework */; };
+		F0338D631F55139500B28AFE /* DataJson.json in Resources */ = {isa = PBXBuildFile; fileRef = F0338D621F55139500B28AFE /* DataJson.json */; };
+		F0338D661F55142500B28AFE /* Unit.m in Sources */ = {isa = PBXBuildFile; fileRef = F0338D651F55142500B28AFE /* Unit.m */; };
+		F0338D691F5514A500B28AFE /* ChooseAttributeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F0338D681F5514A500B28AFE /* ChooseAttributeModel.m */; };
+		F0338D6E1F55173D00B28AFE /* GoodsBuyCountView.m in Sources */ = {isa = PBXBuildFile; fileRef = F0338D6B1F55173D00B28AFE /* GoodsBuyCountView.m */; };
+		F0338D6F1F55173D00B28AFE /* GoodsCatagoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = F0338D6D1F55173D00B28AFE /* GoodsCatagoryView.m */; };
+		F0338D791F5517A000B28AFE /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = F0338D721F5517A000B28AFE /* SVIndefiniteAnimatedView.m */; };
+		F0338D7A1F5517A000B28AFE /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F0338D741F5517A000B28AFE /* SVProgressHUD.bundle */; };
+		F0338D7B1F5517A000B28AFE /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F0338D761F5517A000B28AFE /* SVProgressHUD.m */; };
+		F0338D7C1F5517A000B28AFE /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F0338D781F5517A000B28AFE /* SVRadialGradientLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +64,30 @@
 		F0338D421F5503C100B28AFE /* TaoBaoShoppingCartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaoBaoShoppingCartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0338D461F5503C100B28AFE /* TaoBaoShoppingCartUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaoBaoShoppingCartUITests.m; sourceTree = "<group>"; };
 		F0338D481F5503C100B28AFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0338D541F5506BF00B28AFE /* BasicDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasicDefine.h; sourceTree = "<group>"; };
+		F0338D571F55085900B28AFE /* ChooseCategoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseCategoryView.h; sourceTree = "<group>"; };
+		F0338D581F55085900B28AFE /* ChooseCategoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseCategoryView.m; sourceTree = "<group>"; };
+		F0338D5A1F5508C700B28AFE /* StoreProjectDetailModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreProjectDetailModule.h; sourceTree = "<group>"; };
+		F0338D5B1F5508C700B28AFE /* StoreProjectDetailModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreProjectDetailModule.m; sourceTree = "<group>"; };
+		F0338D5E1F5509C000B28AFE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F0338D601F5509ED00B28AFE /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		F0338D621F55139500B28AFE /* DataJson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DataJson.json; sourceTree = "<group>"; };
+		F0338D641F55142500B28AFE /* Unit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Unit.h; sourceTree = "<group>"; };
+		F0338D651F55142500B28AFE /* Unit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Unit.m; sourceTree = "<group>"; };
+		F0338D671F5514A500B28AFE /* ChooseAttributeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseAttributeModel.h; sourceTree = "<group>"; };
+		F0338D681F5514A500B28AFE /* ChooseAttributeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseAttributeModel.m; sourceTree = "<group>"; };
+		F0338D6A1F55173D00B28AFE /* GoodsBuyCountView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodsBuyCountView.h; sourceTree = "<group>"; };
+		F0338D6B1F55173D00B28AFE /* GoodsBuyCountView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodsBuyCountView.m; sourceTree = "<group>"; };
+		F0338D6C1F55173D00B28AFE /* GoodsCatagoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodsCatagoryView.h; sourceTree = "<group>"; };
+		F0338D6D1F55173D00B28AFE /* GoodsCatagoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodsCatagoryView.m; sourceTree = "<group>"; };
+		F0338D711F5517A000B28AFE /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		F0338D721F5517A000B28AFE /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		F0338D731F5517A000B28AFE /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
+		F0338D741F5517A000B28AFE /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		F0338D751F5517A000B28AFE /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		F0338D761F5517A000B28AFE /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		F0338D771F5517A000B28AFE /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		F0338D781F5517A000B28AFE /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +95,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0338D611F5509ED00B28AFE /* CoreFoundation.framework in Frameworks */,
+				F0338D5F1F5509C000B28AFE /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +124,7 @@
 				F0338D3A1F5503C000B28AFE /* TaoBaoShoppingCartTests */,
 				F0338D451F5503C100B28AFE /* TaoBaoShoppingCartUITests */,
 				F0338D1F1F5503C000B28AFE /* Products */,
+				F0338D5D1F5509C000B28AFE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +141,9 @@
 		F0338D201F5503C000B28AFE /* TaoBaoShoppingCart */ = {
 			isa = PBXGroup;
 			children = (
+				F0338D701F5517A000B28AFE /* SVProgressHUD */,
+				F0338D551F55085900B28AFE /* Model */,
+				F0338D561F55085900B28AFE /* View */,
 				F0338D241F5503C000B28AFE /* AppDelegate.h */,
 				F0338D251F5503C000B28AFE /* AppDelegate.m */,
 				F0338D271F5503C000B28AFE /* ViewController.h */,
@@ -110,6 +153,7 @@
 				F0338D2F1F5503C000B28AFE /* LaunchScreen.storyboard */,
 				F0338D321F5503C000B28AFE /* Info.plist */,
 				F0338D211F5503C000B28AFE /* Supporting Files */,
+				F0338D541F5506BF00B28AFE /* BasicDefine.h */,
 			);
 			path = TaoBaoShoppingCart;
 			sourceTree = "<group>";
@@ -117,6 +161,9 @@
 		F0338D211F5503C000B28AFE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F0338D641F55142500B28AFE /* Unit.h */,
+				F0338D651F55142500B28AFE /* Unit.m */,
+				F0338D621F55139500B28AFE /* DataJson.json */,
 				F0338D221F5503C000B28AFE /* main.m */,
 			);
 			name = "Supporting Files";
@@ -138,6 +185,54 @@
 				F0338D481F5503C100B28AFE /* Info.plist */,
 			);
 			path = TaoBaoShoppingCartUITests;
+			sourceTree = "<group>";
+		};
+		F0338D551F55085900B28AFE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F0338D671F5514A500B28AFE /* ChooseAttributeModel.h */,
+				F0338D681F5514A500B28AFE /* ChooseAttributeModel.m */,
+				F0338D5A1F5508C700B28AFE /* StoreProjectDetailModule.h */,
+				F0338D5B1F5508C700B28AFE /* StoreProjectDetailModule.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F0338D561F55085900B28AFE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F0338D571F55085900B28AFE /* ChooseCategoryView.h */,
+				F0338D581F55085900B28AFE /* ChooseCategoryView.m */,
+				F0338D6A1F55173D00B28AFE /* GoodsBuyCountView.h */,
+				F0338D6B1F55173D00B28AFE /* GoodsBuyCountView.m */,
+				F0338D6C1F55173D00B28AFE /* GoodsCatagoryView.h */,
+				F0338D6D1F55173D00B28AFE /* GoodsCatagoryView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F0338D5D1F5509C000B28AFE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0338D601F5509ED00B28AFE /* CoreFoundation.framework */,
+				F0338D5E1F5509C000B28AFE /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F0338D701F5517A000B28AFE /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				F0338D711F5517A000B28AFE /* SVIndefiniteAnimatedView.h */,
+				F0338D721F5517A000B28AFE /* SVIndefiniteAnimatedView.m */,
+				F0338D731F5517A000B28AFE /* SVProgressHUD-Prefix.pch */,
+				F0338D741F5517A000B28AFE /* SVProgressHUD.bundle */,
+				F0338D751F5517A000B28AFE /* SVProgressHUD.h */,
+				F0338D761F5517A000B28AFE /* SVProgressHUD.m */,
+				F0338D771F5517A000B28AFE /* SVRadialGradientLayer.h */,
+				F0338D781F5517A000B28AFE /* SVRadialGradientLayer.m */,
+			);
+			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,7 +344,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0338D7A1F5517A000B28AFE /* SVProgressHUD.bundle in Resources */,
 				F0338D311F5503C000B28AFE /* LaunchScreen.storyboard in Resources */,
+				F0338D631F55139500B28AFE /* DataJson.json in Resources */,
 				F0338D2E1F5503C000B28AFE /* Assets.xcassets in Resources */,
 				F0338D2C1F5503C000B28AFE /* Main.storyboard in Resources */,
 			);
@@ -277,7 +374,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0338D291F5503C000B28AFE /* ViewController.m in Sources */,
+				F0338D5C1F5508C700B28AFE /* StoreProjectDetailModule.m in Sources */,
+				F0338D6F1F55173D00B28AFE /* GoodsCatagoryView.m in Sources */,
+				F0338D591F55085900B28AFE /* ChooseCategoryView.m in Sources */,
+				F0338D661F55142500B28AFE /* Unit.m in Sources */,
+				F0338D791F5517A000B28AFE /* SVIndefiniteAnimatedView.m in Sources */,
 				F0338D261F5503C000B28AFE /* AppDelegate.m in Sources */,
+				F0338D7C1F5517A000B28AFE /* SVRadialGradientLayer.m in Sources */,
+				F0338D691F5514A500B28AFE /* ChooseAttributeModel.m in Sources */,
+				F0338D6E1F55173D00B28AFE /* GoodsBuyCountView.m in Sources */,
+				F0338D7B1F5517A000B28AFE /* SVProgressHUD.m in Sources */,
 				F0338D231F5503C000B28AFE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,6 +622,7 @@
 				F0338D4D1F5503C100B28AFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F0338D4E1F5503C100B28AFE /* Build configuration list for PBXNativeTarget "TaoBaoShoppingCartTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +631,7 @@
 				F0338D501F5503C100B28AFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F0338D511F5503C100B28AFE /* Build configuration list for PBXNativeTarget "TaoBaoShoppingCartUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +640,7 @@
 				F0338D531F5503C100B28AFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
