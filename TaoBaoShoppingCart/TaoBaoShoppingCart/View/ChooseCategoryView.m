@@ -98,14 +98,14 @@
             newModel.attrValue = @"null";
             [_hadSelectArray addObject:newModel];
         }
-
+        
         
         
         _titleArray = [NSMutableArray array];
         
         
         _sortArray = [NSMutableArray arrayWithArray:_countRightGroupArray];
-
+        
         _hadChooseCount = 1;
         
         [self initView];
@@ -139,23 +139,23 @@
     [self addSubview:_whiteView];
     
     [self creatHeaderFooterView];
-
+    
     [_whiteView addSubview:self.scrollView];
     
     [self creatScrollView];
     
     [self sortIsCanSelectAttribute];
-
+    
 }
 
 - (void)creatScrollView {
     CGFloat scrollHeight = 0;
     __weak typeof(self) weakSelf = self;
-
+    
     for (NSInteger i = 0; i < [_categoryArray count]; ++i) {
         StoreProjectAttributeModule *model = _categoryArray[i];
-
-
+        
+        
         GoodsCatagoryView *cateView = [[GoodsCatagoryView alloc] initWithFrame:CGRectMake(0, scrollHeight, SCREEN_WIDTH, model.cellHeight)
                                                            withAttributeModule:model withIdx:i];
         
@@ -163,7 +163,7 @@
         cateView.block = ^(GoodsAttrValueModel *attModel,NSInteger cellIdx) {
             [weakSelf reloadAttributeButton:attModel idx:cellIdx];
         };
-
+        
         
         scrollHeight += model.cellHeight;
         
@@ -180,12 +180,12 @@
     };
     
     [self.scrollView addSubview:_countCell];
-
+    
     scrollHeight += 155;
     
     
     self.scrollView.contentSize = CGSizeMake(SCREEN_WIDTH, scrollHeight);
-
+    
 }
 
 - (void)setChooseType:(NSInteger)chooseType {
@@ -203,7 +203,7 @@
     imageView.backgroundColor = [UIColor whiteColor];
     imageView.layer.cornerRadius = 3;
     imageView.contentMode = UIViewContentModeScaleAspectFill;
-    imageView.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    imageView.layer.borderColor = kColor_Eight.CGColor;
     imageView.layer.borderWidth = 0.6;
     imageView.layer.masksToBounds = YES;
     
@@ -222,12 +222,12 @@
     
     _countLabel = [[UILabel alloc] initWithFrame:CGRectMake(RIGHT_X(imageView)+15, BOTTOM_Y(_priceLabel)+10, SCREEN_WIDTH-150, 15)];
     _countLabel.font = kTextFont_14;
-    _countLabel.textColor = [UIColor grayColor];
+    _countLabel.textColor = [UIColor blackColor];
     _countLabel.text = [NSString stringWithFormat:@"库存%ld件",_detailModule.productNum - _detailModule.purchaseNum];
     [_whiteView addSubview:_countLabel];
     
     _inventoryCount = _detailModule.productNum - _detailModule.purchaseNum;
-
+    
     NSMutableArray *array = [NSMutableArray array];
     for (StoreProjectAttributeModule *model in _detailModule.attributeList) {
         [array addObject:model.attributeName];
@@ -239,15 +239,15 @@
     cateHeight = cateHeight > 40 ? 40 : cateHeight;
     _categoryLabel = [[UILabel alloc] initWithFrame:CGRectMake(RIGHT_X(imageView)+15, BOTTOM_Y(_countLabel)+5, SCREEN_WIDTH-150, cateHeight)];
     _categoryLabel.font = kTextFont_14;
-    _categoryLabel.textColor = [UIColor grayColor];
-
+    _categoryLabel.textColor = [UIColor blackColor];
+    
     _categoryLabel.numberOfLines = 0;
     _categoryLabel.text = _catageString;
     [_whiteView addSubview:_categoryLabel];
     
     
     UIView *lineView = [[UIView alloc]initWithFrame:CGRectMake(15, BOTTOM_Y(imageView)+12, SCREEN_WIDTH-15, 1)];
-    lineView.backgroundColor = [UIColor lightGrayColor];
+    lineView.backgroundColor = kColor_Eight;
     [_whiteView addSubview:lineView];
     
     _sureButton = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -255,10 +255,10 @@
     [_sureButton setTitle:@"完成" forState:UIControlStateNormal];
     [_sureButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [_sureButton setBackgroundColor:RGBCOLOR(159, 200, 255)];
-
+    
     [_sureButton addTarget:self action:@selector(sureButtonClick) forControlEvents:UIControlEventTouchUpInside];
     [_whiteView addSubview:_sureButton];
-
+    
 }
 
 - (void)sureButtonClick {
@@ -292,17 +292,17 @@
         case 3://购买
             [self buy];
             break;
-
+            
             
         default:
             break;
-    }    
+    }
 }
 
 - (void)buy {
     [self removeView];
     [self sendAttributeNotification];
-
+    
     NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:
                          [_titleArray componentsJoinedByString:@","],@"valueGroup",
                          [NSString stringWithFormat:@"%ld",_hadChooseCount],@"num",
@@ -318,12 +318,8 @@
 
 - (void)addInCar {
     [SVProgressHUD showInfoWithStatus:@"添加进购物车"];
-
-    
     [self removeView];
-
     [self sendAttributeNotification];
-
 }
 
 - (void)chooseAtt {
@@ -332,7 +328,13 @@
 }
 
 - (void)sendAttributeNotification {
-    NSLog(@"发送通知");
+    NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:
+                         [_titleArray componentsJoinedByString:@","],@"valueGroup",
+                         [NSString stringWithFormat:@"%ld",_hadChooseCount],@"num",
+                         [NSString stringWithFormat:@"%ld",_detailModule.productId],@"productId",nil];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"ChangeAttributeNotification" object:nil userInfo:dic];
+    
 }
 
 - (void)showInView:(UIView *)view {
@@ -361,11 +363,11 @@
     
     for (NSInteger i = 0; i < [_categoryArray count]; ++i) {//每个属性循环一次
         StoreProjectAttributeModule *smodel = _categoryArray[i];
-//        NSLog(@"外层循环---%ld--%@",i,smodel.attributeName);
+        //        NSLog(@"外层循环---%ld--%@",i,smodel.attributeName);
         
         for (GoodsAttrValueModel *newModel in smodel.attributeValues) {//循环这个属性所有值
             
-//            NSLog(@"---比较某类属性---%@",newModel.attrValue);
+            //            NSLog(@"---比较某类属性---%@",newModel.attrValue);
             
             NSMutableArray *newArray = [NSMutableArray arrayWithArray:_hadSelectArray];
             
@@ -373,7 +375,7 @@
             
             BOOL aa = [self compareSingleMapToGroups:newArray];
             
-//            NSLog(@"%d",aa);
+            //            NSLog(@"%d",aa);
             
             newModel.isCanSelect =  aa;
         }
@@ -392,13 +394,13 @@
             GoodsAttrValueModel *compareModel = singleArray[i];
             
             GoodsAttrValueModel *newModel = groupModel.valueGroup[i];
-//            NSLog(@"开始比第%ld个属性",i)
-
+            //            NSLog(@"开始比第%ld个属性",i)
+            
             if((![compareModel.attrValue isEqualToString:newModel.attrValue] && ![compareModel.attrValue isEqualToString:@"null"])) {
                 break;
             }
         }
-//        NSLog(@"++++++++++++++++++++%ld++++++++++++++++",i);
+        //        NSLog(@"++++++++++++++++++++%ld++++++++++++++++",i);
         if(i == singleArray.count && (groupModel.totalNumber - groupModel.sellNumber > 0)) {
             
             return YES;
@@ -410,7 +412,7 @@
 }
 
 - (void)reloadAttributeButton:(GoodsAttrValueModel *)model idx:(NSInteger)cellIdx {
-//    NSLog(@"%@",model.attrValue);
+    //    NSLog(@"%@",model.attrValue);
     
     if ([_detailModule.valueGroupList count] <= 0) {
         return;
@@ -430,12 +432,12 @@
         [_hadSelectArray replaceObjectAtIndex:cellIdx withObject:newModel];
     }
     
-//    NSLog(@"_hadSelectArray ==////== %@",_hadSelectArray);
+    //    NSLog(@"_hadSelectArray ==////== %@",_hadSelectArray);
     
-
+    
     
     [self sortIsCanSelectAttribute];
-   
+    
     
     /**
      *  数据填充页面
@@ -466,9 +468,9 @@
     } else if ([newArray count] < [_categoryArray count]) {
         [_sureButton setBackgroundColor:RGBCOLOR(159, 200, 255)];
     } else {
-        [_sureButton setBackgroundColor:[UIColor blueColor]];
+        [_sureButton setBackgroundColor:kColor_skyBlue];
     }
-
+    
     
     
     NSMutableArray *lastArray = [NSMutableArray array];
@@ -484,7 +486,7 @@
         for (StoreProjectValueGroupModule *gModel in _detailModule.valueGroupList) {
             if ([gModel.valueGroupString isEqualToString:compareString]) {
                 gModel.isSelect = YES;
-//                NSLog(@"%@",compareString);
+                //                NSLog(@"%@",compareString);
                 
                 _inventoryCount = gModel.totalNumber - gModel.sellNumber;
                 _goodsPrice = gModel.price;
@@ -500,14 +502,14 @@
     }
     
     _countCell.maxCount = _inventoryCount;
-
-
+    
+    
     dispatch_async(dispatch_get_main_queue(), ^{
         NSLog(@"dddddd");
         GoodsCatagoryView *cateView = _cellViewArray[cellIdx];
         
         StoreProjectAttributeModule *smodel = _categoryArray[cellIdx];
-
+        
         [cateView fillCellWithStoreProjectAttributeModule:smodel];
     });
 }

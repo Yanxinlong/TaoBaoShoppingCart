@@ -43,4 +43,8 @@
 #define kTextFont_11   ([UIFont systemFontOfSize:11.0f])
 #define kTextFont_10   ([UIFont systemFontOfSize:10.0f])
 
+#define kColor_skyBlue  RGBCOLOR(0, 160, 239)
+#define kColor_Eight    ([UIColor colorWithRed:227/255.0f green:227/255.0f blue:227/255.0f alpha:1.0f])
+
+
 #endif /* BasicDefine_h */

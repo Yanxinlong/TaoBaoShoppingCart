@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F01544A91F5651C300FCD758 /* icon_attributeNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = F01544A71F5651C300FCD758 /* icon_attributeNormal.png */; };
+		F01544AA1F5651C300FCD758 /* icon_attributeSelect.png in Resources */ = {isa = PBXBuildFile; fileRef = F01544A81F5651C300FCD758 /* icon_attributeSelect.png */; };
+		F01544AD1F56540900FCD758 /* icon_jia.png in Resources */ = {isa = PBXBuildFile; fileRef = F01544AB1F56540900FCD758 /* icon_jia.png */; };
+		F01544AE1F56540900FCD758 /* icon_jian.png in Resources */ = {isa = PBXBuildFile; fileRef = F01544AC1F56540900FCD758 /* icon_jian.png */; };
 		F0338D231F5503C000B28AFE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0338D221F5503C000B28AFE /* main.m */; };
 		F0338D261F5503C000B28AFE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0338D251F5503C000B28AFE /* AppDelegate.m */; };
 		F0338D291F5503C000B28AFE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0338D281F5503C000B28AFE /* ViewController.m */; };
@@ -48,6 +52,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F01544A71F5651C300FCD758 /* icon_attributeNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_attributeNormal.png; sourceTree = "<group>"; };
+		F01544A81F5651C300FCD758 /* icon_attributeSelect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_attributeSelect.png; sourceTree = "<group>"; };
+		F01544AB1F56540900FCD758 /* icon_jia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_jia.png; sourceTree = "<group>"; };
+		F01544AC1F56540900FCD758 /* icon_jian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_jian.png; sourceTree = "<group>"; };
 		F0338D1E1F5503C000B28AFE /* TaoBaoShoppingCart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaoBaoShoppingCart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0338D221F5503C000B28AFE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F0338D241F5503C000B28AFE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -153,7 +161,6 @@
 				F0338D2F1F5503C000B28AFE /* LaunchScreen.storyboard */,
 				F0338D321F5503C000B28AFE /* Info.plist */,
 				F0338D211F5503C000B28AFE /* Supporting Files */,
-				F0338D541F5506BF00B28AFE /* BasicDefine.h */,
 			);
 			path = TaoBaoShoppingCart;
 			sourceTree = "<group>";
@@ -161,6 +168,11 @@
 		F0338D211F5503C000B28AFE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F0338D541F5506BF00B28AFE /* BasicDefine.h */,
+				F01544AB1F56540900FCD758 /* icon_jia.png */,
+				F01544AC1F56540900FCD758 /* icon_jian.png */,
+				F01544A71F5651C300FCD758 /* icon_attributeNormal.png */,
+				F01544A81F5651C300FCD758 /* icon_attributeSelect.png */,
 				F0338D641F55142500B28AFE /* Unit.h */,
 				F0338D651F55142500B28AFE /* Unit.m */,
 				F0338D621F55139500B28AFE /* DataJson.json */,
@@ -344,8 +356,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F01544AA1F5651C300FCD758 /* icon_attributeSelect.png in Resources */,
 				F0338D7A1F5517A000B28AFE /* SVProgressHUD.bundle in Resources */,
+				F01544AE1F56540900FCD758 /* icon_jian.png in Resources */,
 				F0338D311F5503C000B28AFE /* LaunchScreen.storyboard in Resources */,
+				F01544AD1F56540900FCD758 /* icon_jia.png in Resources */,
+				F01544A91F5651C300FCD758 /* icon_attributeNormal.png in Resources */,
 				F0338D631F55139500B28AFE /* DataJson.json in Resources */,
 				F0338D2E1F5503C000B28AFE /* Assets.xcassets in Resources */,
 				F0338D2C1F5503C000B28AFE /* Main.storyboard in Resources */,

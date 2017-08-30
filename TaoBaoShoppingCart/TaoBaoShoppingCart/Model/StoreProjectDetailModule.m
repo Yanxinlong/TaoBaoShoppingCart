@@ -95,8 +95,6 @@
         
         model.companyHeight = 334/2;
         
-        //设置初始化属性  去重dataArray = [dataArray valueForKeyPath:@"@distinctUnionOfObjects.self"];
-        
         //获取可以选择的属性
         NSMutableArray *canSelectModelArray = [NSMutableArray array];
         
@@ -124,7 +122,6 @@
                 }
             }
         }
-        
         
         block(model,nil);
     } else {

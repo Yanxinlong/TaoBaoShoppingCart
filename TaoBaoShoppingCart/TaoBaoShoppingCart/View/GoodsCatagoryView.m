@@ -85,7 +85,7 @@
 //            NSLog(@"%@-----是否可以选%d",model.attrValue,model.isCanSelect);
             
             
-            [btn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+            [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
             
             [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateSelected];
             

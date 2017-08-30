@@ -33,7 +33,6 @@
     [self reloadBasicInfo];
 }
 
-
 - (void)creatBottomView {
     UIView *bottomView = [[UIView alloc]initWithFrame:CGRectMake(0, SCREEN_HEIGHT-49, SCREEN_WIDTH, 49)];
     bottomView.backgroundColor = RGBCOLOR(245, 245, 245);
@@ -63,19 +62,16 @@
     
     [StoreProjectDetailModule requestStoreProjectDetailModuleCompleteBlock:^(StoreProjectDetailModule *model, NSError *error) {
         [SVProgressHUD dismiss];
-        
+
         _detailModule = model;
         
         _chooseView = [[ChooseCategoryView alloc]initWithBasicModel:_detailModule];
-        
         
         if (_detailModule.productStatus != 1 ) {
             [self.view addSubview:self.soldOutView];
         }
         
     }];
-    
-    
 }
 
 
@@ -95,15 +91,8 @@
     
     [_chooseView showInView:self.view.window];
     
-//    __weak typeof(self) weakSelf = self;
-    
     _chooseView.block = ^(ChooseAttributeModel *model) {
-//        StoreMakeSureOrderViewController *makesureVC = [[StoreMakeSureOrderViewController alloc]init];
-//        
-//        makesureVC.companyId = weakSelf.detailModule.companyId;
-//        makesureVC.productList = [NSMutableArray arrayWithObject:model];
-//        
-//        [weakSelf.navigationController pushViewController:makesureVC animated:YES];
+        [SVProgressHUD showInfoWithStatus:@"跳转到确认订单页面"];
     };
 }
 
