@@ -29,7 +29,6 @@
 
 @property (nonatomic,strong) NSMutableArray *categoryArray;
 
-
 @property (nonatomic,strong) NSMutableArray *cateViewArray;
 
 @property (nonatomic,strong) NSMutableArray *titleArray;
@@ -39,7 +38,6 @@
 @property (nonatomic,assign) NSInteger inventoryCount;
 
 @property (nonatomic,assign) NSInteger hadChooseCount;
-
 
 /**
  *  价格
@@ -375,8 +373,6 @@
             
             BOOL aa = [self compareSingleMapToGroups:newArray];
             
-            //            NSLog(@"%d",aa);
-            
             newModel.isCanSelect =  aa;
         }
         
@@ -387,6 +383,7 @@
 }
 
 - (BOOL)compareSingleMapToGroups:(NSMutableArray *)singleArray {
+    
     for (StoreProjectValueGroupModule *groupModel in _countRightGroupArray) {
         NSInteger i = 0;
         for (; i < [groupModel.valueGroup count]; ++i) {
@@ -400,7 +397,7 @@
                 break;
             }
         }
-        //        NSLog(@"++++++++++++++++++++%ld++++++++++++++++",i);
+
         if(i == singleArray.count && (groupModel.totalNumber - groupModel.sellNumber > 0)) {
             
             return YES;
@@ -412,7 +409,6 @@
 }
 
 - (void)reloadAttributeButton:(GoodsAttrValueModel *)model idx:(NSInteger)cellIdx {
-    //    NSLog(@"%@",model.attrValue);
     
     if ([_detailModule.valueGroupList count] <= 0) {
         return;
@@ -423,7 +419,6 @@
         }
     }
     
-    
     if (model.isSelect) {
         [_hadSelectArray replaceObjectAtIndex:cellIdx withObject:model];
     } else {
@@ -432,12 +427,7 @@
         [_hadSelectArray replaceObjectAtIndex:cellIdx withObject:newModel];
     }
     
-    //    NSLog(@"_hadSelectArray ==////== %@",_hadSelectArray);
-    
-    
-    
     [self sortIsCanSelectAttribute];
-    
     
     /**
      *  数据填充页面

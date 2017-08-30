@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TaoBaoShoppingCart/Model/StoreProjectDetailModule.m"
-            timestampString = "525671091.541288"
+            timestampString = "525757401.708134"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
             landmarkName = "+requestStoreProjectDetailModuleCompleteBlock:"
             landmarkType = "7">
          </BreakpointContent>

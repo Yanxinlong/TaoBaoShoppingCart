@@ -82,7 +82,6 @@
     [_chooseView showInView:self.view.window];
 }
 
-
 #pragma mark------------------购买商品--------------------------------
 
 - (void)buyButtonClick {

@@ -49,8 +49,6 @@
     UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(15, HEIGH(self)-1, SCREEN_WIDTH-15, 1)];
     lineView.backgroundColor = RGBCOLOR(227, 227, 229);
     [self addSubview:lineView];
-    
-//    [self fillCellWithStoreProjectAttributeModule:_attributeModel];
 }
 
 - (void)fillCellWithStoreProjectAttributeModule:(StoreProjectAttributeModule *)model {

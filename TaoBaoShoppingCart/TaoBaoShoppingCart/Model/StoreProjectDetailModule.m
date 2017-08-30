@@ -84,6 +84,8 @@
     
      NSDictionary *obj = [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"DataJson" ofType:@"json"]] options:NSJSONReadingMutableContainers error:nil];
     
+    NSLog(@"%@",obj);
+    
     if (obj && [obj[@"result"] integerValue] == 0) {
         StoreProjectDetailModule *model = [[StoreProjectDetailModule alloc]init];
         [model setValuesForKeysWithDictionary:obj[@"data"]];
